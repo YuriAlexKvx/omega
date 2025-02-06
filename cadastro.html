@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/style-cadastro.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+</head>
+<body>
+    <video autoplay loop muted>
+        <source src="video/VIDEO-DESTAQUE-FINAL.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
+    
+    <form class="cadastro-wrapper" action="/cadastrar" method="POST">
+        <img class="cadastro_logo" alt="omegalogo" title="omegalogo" src="img/work_icon.png">
+        <div class="cadastro-container">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" required>
+            
+            <label for="cpf_cnpj">CPF ou CNPJ:</label>
+            <input type="number" id="cpf_cnpj" inputmode="numeric" required>
+            
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" inputmode="numeric" pattern="^[0-9]{4}-[0-9]{4}$" required>
+            
+            <label for="endereco">Endereço Comercial:</label>
+            <input type="text" id="endereco" required>
+            
+            <label for="empresa">Nome da Empresa:</label>
+            <input type="text" id="empresa" required>
+            
+            <label for="ramo">Ramo da Empresa:</label>
+            <select id="ramo" required>
+                <option value="">Selecione o ramo</option>
+                <option value="agronegocio">Agronegócio</option>
+                <option value="automotivo">Setor Automotivo</option>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="textil">Indústria Têxtil</option>
+                <option value="farmaceutico">Setor Farmacêutico</option>
+            </select>
+            
+            <button type="submit">Registrar</button>
+            <p class="already-logged">Já tem uma conta? <a href="index.html">Entre agora</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/company/omegace/" target="_blank">
+                    <img src="img/linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="img/email.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/omega.ce/" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

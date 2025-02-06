@@ -46,7 +46,12 @@ video {
 .register-text {
     font-size: 12px;
     color: #666;
-    margin-top: 10px;
+    margin-top: 1px;
+}
+.forgot-password {
+    font-size: 12px;
+    color: #666;
+    margin-top: 0px;
 }
 
 /* Estilização dos ícones das redes sociais */

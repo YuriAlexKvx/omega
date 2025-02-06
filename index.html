@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Entrar</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500" rel="stylesheet">
-</head>
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
 <body>
     <video autoplay loop muted>
         <source src="video/VIDEO-DESTAQUE-FINAL.mp4" type="video/mp4">
@@ -16,7 +16,7 @@
 
 
     <!-- Contêiner de login -->
-    <div class="login-wrapper">
+    <form class="login-wrapper" action="/login" method="GET">
         <img class="login_logo" alt="omegalogo" title="omegalogo" src="img/work_icon.png">
         <div class="login-container">
             <label for="usuario" style="font-size: 12px; color: #666;">SEU EMAIL:</label>
@@ -24,7 +24,8 @@
             <label for="password" style="font-size: 12px; color: #666;">SUA SENHA:</label>
             <input type="password" placeholder="Senha" required>
             <button type="submit">Entrar</button>
-            <p class="register-text">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+            <p class="register-text">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+            <p class="forgot-password">Esqueceu sua senha? Clique em <a href="#">esqueci a senha</a></p>
     
             <!-- Ícones das redes sociais -->
             <div class="social-icons">
@@ -39,6 +40,6 @@
                 </a>
             </div>
         </div>
-    </div>    
+    </form>    
 </body>
 </html>
