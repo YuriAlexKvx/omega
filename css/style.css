@@ -42,16 +42,13 @@ video {
     margin-bottom: 15px; /* Espaço entre logo e formulário */
 }
 
-/* Reduz o tamanho do texto "Não tem uma conta?" */
-.register-text {
-    font-size: 12px;
-    color: #666;
-    margin-top: 1px;
-}
+.register-text,
 .forgot-password {
-    font-size: 12px;
+    font-size: 14px; /* Ajuste o tamanho conforme necessário */
     color: #666;
-    margin-top: 0px;
+    margin-top: 10px;
+    font-weight: lighter; /* SÓ MUDAR SE QUISER O TEXTO MAIS CLARO OU MAIS ESCURO */
+    text-align: left; /* Se precisar centralizar */
 }
 
 /* Estilização dos ícones das redes sociais */
@@ -81,15 +78,14 @@ video {
 
 /* Contêiner de login */
 .login-container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 100%;
+    max-width: 500px;
     text-align: left;
-    display: block;
-    margin: 0 auto;
-    z-index: 1;
+    margin: 20px 0;
 }
 
 .login-container label {
@@ -136,4 +132,77 @@ video {
 
 .login-container a:hover {
     text-decoration: underline;
+}
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        background-color: #f0f0f0;
+    }
+
+    .login-wrapper {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .login_logo {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .login-container label {
+        font-size: 14px;
+    }
+
+    .login-container input {
+        padding: 10px;
+    }
+
+    .login-container button {
+        padding: 10px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+}
+
+/* Responsividade para celulares menores */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .login-wrapper {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .login_logo {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-container label {
+        font-size: 12px;
+    }
+
+    .login-container input {
+        padding: 8px;
+    }
+
+    .login-container button {
+        padding: 8px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
 }

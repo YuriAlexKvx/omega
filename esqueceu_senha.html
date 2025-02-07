@@ -3,32 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="css/style-esqueci-senha.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,500" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+</head>
 <body>
     <video autoplay loop muted>
         <source src="video/VIDEO-DESTAQUE-FINAL.mp4" type="video/mp4">
         Seu navegador não suporta vídeos HTML5.
     </video>
 
-
-    <!-- Contêiner de login -->
-    <form class="login-wrapper" action="/login" method="GET">
+    <!-- Contêiner de recuperação de senha -->
+    <form class="password-recovery-wrapper" action="/recuperar-senha" method="POST">
         <a href="https://omegacomercioexterior.com.br/" target="_blank">
-            <img class="login_logo" alt="omegalogo" title="omegalogo" src="img/work_icon.png">
-            </a>
-        <div class="login-container">
-            <label for="usuario" style="font-size: 12px; color: #666;">SEU EMAIL:</label>
-            <input type="text" placeholder="E-mail" required>
-            <label for="password" style="font-size: 12px; color: #666;">SUA SENHA:</label>
-            <input type="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-            <p class="register-text">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
-            <p class="forgot-password">Esqueceu sua senha? Clique em <a href="esqueceu_senha.html">esqueci a senha</a></p>
-    
+            <img class="recovery_logo" alt="omegalogo" title="omegalogo" src="img/work_icon.png">
+        </a>
+        <div class="password-recovery-container">
+            <h2>Recuperar Senha</h2>
+            <p>Digite seu e-mail cadastrado para receber um link de redefinição de senha.</p>
+            <label for="email" style="font-size: 12px; color: #666;">SEU EMAIL:</label>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <button type="submit">Enviar Link</button>
+            <p class="back-to-login">Lembrou sua senha?<a href="index.html"> Entre agora </a></p>
+
             <!-- Ícones das redes sociais -->
             <div class="social-icons">
                 <a href="https://www.linkedin.com/company/omegace/" target="_blank">

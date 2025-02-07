@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Centraliza os elementos */
+.password-recovery-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Ajusta a logo */
+.recovery_logo {
+    width: 250px;
+    max-width: 80%;
+    display: block;
+    margin-bottom: 15px; /* Espaço entre logo e formulário */
+}
+
+/* Texto de recuperação */
+.back-to-login {
+    font-size: 14px !important;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Estilização dos ícones das redes sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Contêiner de recuperação de senha */
+.password-recovery-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+
+.password-recovery-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px !important;
+}
+
+.password-recovery-container p {
+    text-align: center;
+    font-size: 16px !important;
+    margin-bottom: 15px;
+}
+
+.password-recovery-container label {
+    font-size: 12px; /* Ajuste o tamanho conforme necessário */
+    color: #666;
+    margin-top: 10px;
+    font-weight: lighter; /* SÓ MUDAR SE QUISER O TEXTO MAIS CLARO OU MAIS ESCURO */
+    text-align: left; /* Se precisar centralizar */
+}
+
+.password-recovery-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-recovery-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3c67dd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.password-recovery-container button:hover {
+    background-color: #566adb;
+}
+
+.password-recovery-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.password-recovery-container a:hover {
+    text-decoration: underline;
+}
+
+/* Ajusta o formulário para telas menores */
+@media (max-width: 600px) {
+    .password-recovery-container {
+        width: 90%; /* Em vez de um valor fixo, usa uma porcentagem */
+        padding: 15px;
+    }
+
+    .password-recovery-container h2 {
+        font-size: 18px;
+    }
+
+    .password-recovery-container p {
+        font-size: 12px;
+    }
+
+    .password-recovery-container input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .password-recovery-container button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
+
+    .social-icons a {
+        width: 25px;
+        height: 25px;
+    }
+}
+/* Para telas maiores, como tablets e desktop */
+@media (min-width: 601px) {
+    .password-recovery-container {
+        width: 400px;
+    }
+
+    .password-recovery-container h2 {
+        font-size: 22px;
+    }
+
+    .password-recovery-container p {
+        font-size: 16px;
+    }
+
+    .password-recovery-container input {
+        padding: 12px;
+    }
+
+    .password-recovery-container button {
+        padding: 12px;
+    }
+}
